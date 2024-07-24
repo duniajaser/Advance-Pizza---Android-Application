@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.project_1201345_12012093.ui.specialoffer.SpecialOfferFragment">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#333333"
+        android:gravity="center"
+        android:text="Special Offers"
+        android:textAlignment="center"
+        android:textColor="#F8F3F3"
+        android:textColorHint="#F6F3F3"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18dp" />
+
+</LinearLayout>

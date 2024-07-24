@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.project_1201345_12012093.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pizza_menu"
+
+        android:name="com.example.project_1201345_12012093.ui.pizzamenu.PizzamenuFragment"
+        android:label="@string/menu_pizzamenu"
+        tools:layout="@layout/fragment_pizzamenu">
+        <action
+        android:id="@+id/action_nav_pizza_menu_to_nav_pizza_details"
+        app:destination="@id/nav_pizza_details" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_pizza_details"
+        android:name="com.example.project_1201345_12012093.ui.slideshow.Slidesow"
+        android:label="Pizza Details"
+        tools:layout="@layout/fragment_slideshow">
+        <argument
+            android:name="pizzaType"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.example.project_1201345_12012093.ui.userorders.UserOrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_user_orders" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.example.project_1201345_12012093.ui.userfav.UserfavFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_userfav" />
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.project_1201345_12012093.ui.userprofile.UserProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_user_profile" />
+
+
+
+    <fragment
+        android:id="@+id/nav_special_offers"
+        android:name="com.example.project_1201345_12012093.ui.specialoffer.SpecialOfferFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_special_offer" />
+
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.project_1201345_12012093.ui.aboutus.AboutUsFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us"/>
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.project_1201345_12012093.ui.logout.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout"/>
+
+
+</navigation>
